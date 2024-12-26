@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Roboto, sans-serif;
+  font-family: Inter, sans-serif;
 }
 
 body {
@@ -11,6 +11,7 @@ body {
   align-items: center;
   min-height: 100vh;
   background-color: #f8f8f8;
+  padding: 10px; 
 }
 
 .container {
@@ -51,7 +52,7 @@ h1 {
   align-items: center;
   gap: 10px;
   margin: 20px 0;
-  color: #3f3f3f;
+  color: #aaa;
 }
 
 .divider::before,
@@ -99,6 +100,7 @@ input {
 }
 
 .sign-in-btn {
+  font-family: Roboto, sans-serif;
   width: 100%;
   padding: 10px;
   background: #4a5aff;
@@ -122,4 +124,54 @@ input {
 .signup-text a {
   color: #007bff;
   text-decoration: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+      padding: 15px;
+  }
+
+  h1 {
+      font-size: 1.8em;
+  }
+
+  input {
+      font-size: 0.95em;
+  }
+
+  .social-icons img {
+      width: 35px;
+      height: 35px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+      padding: 10px;
+      border-radius: 5px;
+  }
+
+  h1 {
+      font-size: 1.5em;
+  }
+
+  .social-icons img {
+      width: 30px;
+      height: 30px;
+  }
+
+  .sign-in-btn {
+      font-size: 0.9em;
+      padding: 8px;
+  }
+
+  input {
+      padding: 8px;
+      font-size: 0.9em;
+  }
+
+  .password-field .toggle-password {
+      font-size: 1em;
+  }
 }
