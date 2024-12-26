@@ -89,6 +89,7 @@ body {
 }
 
 .signup-btn {
+    font-family: Roboto, sans-serif;
     width: 100%;
     padding: 15px;
     background-color: #007bff;
