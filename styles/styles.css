@@ -51,7 +51,7 @@ h1 {
   align-items: center;
   gap: 10px;
   margin: 20px 0;
-  color: #aaa;
+  color: #3f3f3f;
 }
 
 .divider::before,
