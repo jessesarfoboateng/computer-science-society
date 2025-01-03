@@ -4,7 +4,7 @@
   padding: 0;
 }
 body {
-  font-family: Roboto, sans-serif;
+  font-family: Poppins, sans-serif;
   --color1: #FFF ;
   --color2: #181818 ;
 }
@@ -18,7 +18,9 @@ body {
   background-color: var(--color2);
   padding: 12px 20px;
 }
-.logo img {width: 40px;}
+.logo img {width: 50px;
+           /* margin-top: 12px; */
+          }
 .menu {display: flex;}
 .menu li {padding-left: 30px; }
 .menu li a {
