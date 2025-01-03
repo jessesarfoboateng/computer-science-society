@@ -4,7 +4,7 @@
   padding: 0;
 }
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: Roboto, sans-serif;
   --color1: #FFF ;
   --color2: #181818 ;
 }
@@ -72,8 +72,26 @@ body {
       background-color: var(--color2);
       transition: all 0.2s ease-in-out;
   }
+
+
   .menu li {margin-top: 40px;}
   .menu li a {padding: 10px;}
   .open-menu , .close-menu {display: block;}
   #check:checked ~ .menu {right: 0;}
+}
+
+.sign-inbutton {
+  background-color: rgba(51, 102, 255, 1);
+  color: white;
+  font-size: 15px;
+  padding: 10px 25px;
+  margin-right: 40px;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: opacity 0.4s;
+}
+
+.sign-inbutton:hover {
+  /* background-color: rgb(22, 49, 130); */
+  opacity: 0.6;
 }
