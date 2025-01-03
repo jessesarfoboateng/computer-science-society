@@ -80,6 +80,10 @@ body {
     margin-right: 40px;
   }
 
+  .event-suggestion {
+    font-size: 15px;
+  }
+
 
   .menu li {margin-top: 40px;}
   .menu li a {padding: 10px;}
@@ -123,6 +127,6 @@ body {
 }
 
 .event-redirect:hover {
-  color:  rgb(29, 70, 193);
+  color: rgb(29, 70, 193);
 }
 
