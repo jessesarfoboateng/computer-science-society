@@ -105,7 +105,7 @@ body {
   /* font-weight: 500; */
 }
 
-.sign-inbutton:hover {
+.sign-inbutton:hover, .join-button:hover {
   /* background-color: rgb(22, 49, 130); */
   opacity: 0.6;
 }
@@ -129,7 +129,7 @@ body {
 }
 
 .event-redirect:hover {
-  color: rgb(29, 70, 193);
+  color: rgb(18, 35, 86);
 }
 
 .society-flex {
@@ -137,18 +137,34 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 20px;
+  /* background-image: url('/assets/lecture picture.png');
+  background-size: cover;
+  background-position: center; 
+  background-repeat: no-repeat;
+  width: 100%; */
 }
 
 .society-topic {
   font-size: 60px;
   font-weight: Bold;
   color: var(--darkColor);
-
+  margin-top: 40px;
 }
 
 .society-bio {
   font-size: 24px;
   font-weight: Bold;
   text-align: center;
+}
+
+.join-button {
+  background-color: rgba(51, 102, 255, 1);
+  color: white;
+  font-size: 15px;
+  padding: 10px 25px;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: opacity 0.4s;
 }
 
