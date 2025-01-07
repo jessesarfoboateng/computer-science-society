@@ -218,6 +218,49 @@ body {
   justify-content: space-between;
 }
 
+.whole-event {
+  display: flex;
+  align-items: center;
+
+}
+
+.event-flex {
+  display: flex;
+  flex-direction: column;
+  width: 446px;
+  gap: 20px;
+}
+
+.event-picture {
+  width: 536px;
+  height: 260px;
+  border-radius: 8px;
+}
+
+.event-title {
+  font-size: 34px;
+  font-weight: 500;
+}
+
+.event-motive {
+  text-align: left;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.event-date {
+  font-size: 16px;
+}
+
+.view-event-button {
+  background-color: rgba(51, 102, 255, 1);
+  color: white;
+  font-size: 15px;
+  padding: 10px 40px;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: opacity 0.4s;
+}
 @media(max-width: 900px){
   .menu {
       flex-direction: column;
