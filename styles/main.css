@@ -165,6 +165,7 @@ body {
   height: 210px;
   padding: 20px;
   border-radius: 10px;
+  box-shadow: 10px 10px 30px rgba(139, 139, 139, 0.8);
 }
 
 .feature-column h3 {
@@ -265,6 +266,7 @@ body {
   .feature-column {
     margin: 10px 0; /* Adds spacing between columns in column layout */
     width: 80%; /* Reduces width to make it more mobile-friendly */
+    
   }
 
 }
