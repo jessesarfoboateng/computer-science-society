@@ -161,7 +161,7 @@ body {
   flex: 1; /* All columns take up equal space */
   margin: 0 10px; /* Adds spacing between columns */
   text-align: center; /* Centers text horizontally */
-  background-color:#e1e4f3;
+  background-color:rgba(145, 178, 255, 0.4);
   cursor: pointer;
   transition: box-shadow 0.5s;
   height: 210px;
@@ -209,7 +209,7 @@ body {
 .activities-section {
   background-color: rgba(145, 178, 255, 0.4);
   padding: 40px;
-  margin-top: 130px;
+  margin-top: 50px;
 }
 
 .view-button {
