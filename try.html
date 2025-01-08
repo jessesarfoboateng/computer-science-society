@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Spotlight</title>
+  <link rel="stylesheet" href="/styles/try.css">
+</head>
+<body>
+ 
+  <header class="challenge">
+    <h1>Join 1,000+ society members in solving challenges.</h1>
+    <p>Sharpen your skills; Stand out among your colleagues.</p>
+    <button class="cta-button">Join the Challenge</button>
+    <div class="profile-pictures">
+      <img src="/assets/CSS Logo.png" alt="Profile 1" class="profile-pic">
+      <img src="/assets/CSS Logo.png" alt="Profile 2" class="profile-pic">
+      <img src="/assets/CSS Logo.png" alt="Profile 3" class="profile-pic">
+      <img src="/assets/CSS Logo.png" alt="Profile 4" class="profile-pic">
+      <img src="/assets/CSS Logo.png" alt="Profile 5" class="profile-pic">
+    </div>
+  </header>
+
+  <main class="main-content">
+    <section class="css-spotlight">
+      <h2>CSS Spotlight</h2>
+      <div class="spotlight-content">
+        <img src="robot.jpg" alt="AI Robot" class="spotlight-image">
+        <div class="spotlight-text">
+          <h3>The Effect of AI on Humanity</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est.</p>
+          <a href="#" class="read-more">Read Now</a>
+        </div>
+      </div>
+      <div class="spotlight-list">
+        <h3>Related Articles</h3>
+        <ul>
+          <li>
+            <img src="robot.jpg" alt="AI Robot">
+            <div>
+              <p>The Effect of AI on Humanity</p>
+              <span>20th June 2023</span>
+            </div>
+          </li>
+          <!-- Repeat for other articles -->
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    const profilePics = document.querySelectorAll('.profile-pic');
+
+    profilePics.forEach((pic, index) => {
+      const delay = index * 0.5; // Delay each image's animation slightly
+      pic.style.animationDelay = `${delay}s`;
+    
+      // Randomize starting position within the container
+      const randomX = Math.random() * window.innerWidth - 50;
+      const randomY = Math.random() * window.innerHeight - 50;
+      pic.style.left = `${randomX}px`;
+      pic.style.top = `${randomY}px`;
+    });
+    
+  </script>
+</body>
+</html>

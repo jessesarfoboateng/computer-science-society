@@ -288,7 +288,7 @@ body {
   cursor: pointer;
 }
 
-.view-event-button:hover, .view-button:hover {
+.view-event-button:hover, .view-button:hover, .cta-button:hover {
   background-color: rgb(18, 35, 86);
 }
 
@@ -340,6 +340,75 @@ body {
 
 .guidelines-button:hover {
   background-color: #e0e0ff;
+}
+
+.challenge {
+  text-align: center;
+  padding: 2rem 1rem;
+  background: #f9f9f9;
+  position: relative;
+  overflow: hidden; /* To prevent images from spilling outside the container */
+  background-color: rgba(145, 178, 255, 0.4);
+  height: 300px; /* Set the challenge height */
+}
+
+.challenge h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  margin-top: 30px;
+}
+
+.challenge p {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 1.5rem;
+}
+
+.cta-button {
+  background: #007bff;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 1;
+  position: relative;
+  transition: background-color 0.3s;
+}
+
+.bouncing-pictures {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  pointer-events: none; /* Prevent interaction with bouncing images */
+}
+
+.profile-pic {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  animation: bounce 5s infinite ease-in-out;
+  will-change: transform;
+}
+
+/* Animations */
+@keyframes bounce {
+  0%, 100% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(50vw, 20vh);
+  }
+  50% {
+    transform: translate(-30vw, 50vh);
+  }
+  75% {
+    transform: translate(20vw, -30vh);
+  }
 }
 
 
@@ -555,6 +624,19 @@ body {
     font-size: 13px;
     padding: 6px 25px; /* Compact button */
   }
+/* 
+  .challenge h1 {
+    font-size: 1.5rem;
+  }
+
+  .challenge p { 
+    font-size: 0.9rem;
+  }
+
+  .profile-pic {
+    width: 40px;
+    height: 40px;
+  } */
 }
 
 @media (max-width: 480px) {
