@@ -292,6 +292,56 @@ body {
   background-color: rgb(18, 35, 86);
 }
 
+.guidelines-section {
+  background-color: #4e5fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  width: 100%;
+}
+
+/* Content Container */
+.guidelines-content {
+  text-align: center;
+  color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 600px;
+  width: 90%;
+
+}
+
+/* Title Styling */
+.guidelines-title {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+/* Description Styling */
+.guidelines-description {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+/* Button Styling */
+.guidelines-button {
+  background-color: #fff;
+  color: #4e5fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.guidelines-button:hover {
+  background-color: #e0e0ff;
+}
+
 
 @media(max-width: 900px){
   .menu {
@@ -370,6 +420,20 @@ body {
     font-size: 14px;
     padding: 10px 60px; /* Reduce button size */
   }
+
+  .guidelines-title {
+    font-size: 1.5rem;
+  }
+
+  .guidelines-description {
+    font-size: 0.9rem;
+  }
+
+  .guidelines-button {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+  }
+
 }
 
 /* For medium devices (tablets) */
@@ -415,3 +479,121 @@ body {
 }
 
 
+/* Media Query for 1086px to Phones */
+@media (max-width: 1086px) {
+ 
+
+  .css-logo {
+    width: 40px; /* Smaller logo */
+  }
+
+  .heading-1 {
+    font-size: 28px; /* Smaller heading size */
+  }
+
+  .view-button {
+    font-size: 14px;
+    padding: 8px 30px; /* Compact button */
+  }
+
+  .whole-event {
+    flex-direction: column; /* Stack items vertically */
+    align-items: flex-start;
+    gap: 15px;
+    margin: 15px;
+  }
+
+  .event-picture {
+    width: 100%; /* Full width for image */
+    height: auto; /* Maintain aspect ratio */
+  }
+
+  .event-flex {
+    width: 100%; /* Full width for text content */
+    gap: 15px;
+  }
+
+  .event-title {
+    font-size: 28px; /* Adjust font size */
+  }
+
+  .event-motive {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .event-date {
+    font-size: 14px;
+  }
+
+  .view-event-button {
+    font-size: 14px;
+    padding: 8px 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .whole-event {
+    gap: 12px; /* Reduce gap further */
+    margin: 10px;
+  }
+
+  .event-title {
+    font-size: 24px; /* Smaller font for tablets */
+  }
+
+  .event-motive {
+    font-size: 13px;
+    line-height: 18px;
+  }
+
+  .event-date {
+    font-size: 13px;
+  }
+
+  .view-event-button {
+    font-size: 13px;
+    padding: 6px 25px; /* Compact button */
+  }
+}
+
+@media (max-width: 480px) {
+  .css-logo {
+    display: none;
+  }
+  .heading-flex {
+    align-items: center; /* Center align on phones */
+    gap: 5px;
+  }
+
+  .heading-1 {
+    font-size: 20px; /* Smaller heading size for phones */
+  }
+
+  .view-button {
+    font-size: 12px;
+    padding: 5px 20px; /* Compact button for phones */
+  }
+
+  .whole-event {
+    gap: 8px;
+    margin-bottom: 30px;
+  }
+
+  .event-title {
+    font-size: 20px; /* Adjust font size for phones */
+  }
+
+  .event-motive {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .event-date {
+    font-size: 12px;
+  }
+
+  .view-event-button {
+    font-size: 12px;
+  }
+}
