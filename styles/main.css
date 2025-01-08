@@ -206,6 +206,12 @@ body {
   z-index: -1; /* Sends the video behind the content */
 }
 
+.activities-section {
+  background-color: rgba(145, 178, 255, 0.4);
+  padding: 40px;
+  margin-top: 130px;
+}
+
 .view-button {
   background-color: rgba(51, 102, 255, 1);
   color: white;
@@ -222,7 +228,11 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 100px;
+
+}
+
+.heading-1 {
+  font-size: 35px;
 }
 
 .event-with-button {
