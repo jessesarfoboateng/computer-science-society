@@ -11,3 +11,26 @@ profilePics.forEach((pic, index) => {
   pic.style.top = `${randomY}px`;
 });
 
+
+document.addEventListener('DOMContentLoaded', () => {
+  const form = document.querySelector('.newsletter-form');
+  const input = document.querySelector('.newsletter-input');
+
+  form.addEventListener('submit', (event) => {
+      event.preventDefault(); // Prevents the form from refreshing the page
+
+      const email = input.value.trim();
+      if (validateEmail(email)) {
+          alert(`Thank you for subscribing with: ${email}`);
+          input.value = ''; // Clears the input field after submission
+      } else {
+          alert('Please enter a valid email address.');
+      }
+  });
+
+  function validateEmail(email) {
+      const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; // Simple email validation pattern
+      return emailPattern.test(email);
+  }
+});
+
