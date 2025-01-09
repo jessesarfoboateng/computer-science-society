@@ -12,6 +12,7 @@ profilePics.forEach((pic, index) => {
 });
 
 
+//Alerts user on successful subscription
 document.addEventListener('DOMContentLoaded', () => {
   const form = document.querySelector('.newsletter-form');
   const input = document.querySelector('.newsletter-input');
