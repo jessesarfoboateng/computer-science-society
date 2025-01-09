@@ -145,6 +145,11 @@ h1 {
     margin-right: 40px;
   }
 
+  h1 {
+    font-size: 25px;
+    margin-top: 25px;
+  }
+
 
   .menu li {margin-top: 40px;}
   .menu li a {padding: 10px;}
