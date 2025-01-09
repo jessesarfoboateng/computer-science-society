@@ -3,153 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Event Calendar</title>
+    <title>Internship Search</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
             margin: 0;
-            padding: 20px;
+            padding: 0;
             box-sizing: border-box;
-        }
-        .calendar-container {
             display: flex;
-            justify-content: space-between;
+            justify-content: center;
             align-items: center;
-            flex-wrap: wrap;
+            height: 100vh;
+            font-family: 'Inter', Arial, sans-serif;
+            background-color: #f9f9f9;
         }
-        h1 {
-            margin-bottom: 20px;
-        }
-        .event {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin-bottom: 20px;
-            padding: 10px;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            max-width: 100%;
-        }
-        .event img {
-            width: 100%;
-            max-width: 300px;
-            height: auto;
-            object-fit: cover;
-            margin-bottom: 15px;
-            border-radius: 5px;
-        }
-        .event-info {
+        .search-container {
             text-align: center;
         }
-        .view-event-button {
-            background-color: #6200ea;
-            color: #fff;
-            padding: 8px 16px;
+        .heading {
+            margin-bottom: 15px;
+            font-size: 1.8rem;
+            font-weight: 600;
+            color: #333;
+        }
+        .search-box {
+            display: flex;
+            gap: 12px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .search-input {
+            display: flex;
+            align-items: center;
+            padding: 15px;
             border: none;
-            border-radius: 5px;
-            cursor: pointer;
+            border-radius: 8px;
+            flex: 1;
+            min-width: 280px;
+            max-width: 420px;
+            background-color: #e9ecef;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s;
         }
-        .view-event-button:hover {
-            background-color: #3700b3;
+        .search-input input {
+            border: none;
+            outline: none;
+            width: 100%;
+            background: transparent;
+            font-size: 1rem;
+            color: #555;
+            padding-left: 5px;
         }
-        @media (min-width: 600px) {
-            .event {
-                flex-direction: row;
-                align-items: flex-start;
-            }
-            .event img {
-                margin-right: 15px;
-                margin-bottom: 0;
-                width: 150px;
-                height: 100px;
-            }
-            .event-info {
-                text-align: left;
-            }
+        .search-input .icon {
+            font-size: 1.2rem;
+            color: #888;
+        }
+        .search-input:focus-within {
+            background-color: #dee2e6;
         }
     </style>
 </head>
 <body>
-    <div class="calendar-container">
-        <h1>Previous Activities</h1>
-        <input type="date" id="eventDate" />
-    </div>
-    <div id="eventsContainer">
-        <div class="event" data-date="2023-01-30">
-            <img src="https://via.placeholder.com/150" alt="Event">
-            <div class="event-info">
-                <h2>CSS Freshers' Orientation</h2>
-                <p>A program to introduce and orient freshers on what the society is about.</p>
-                <p>Date: <span class="event-date">30th January, 2023</span></p>
-                <button class="view-event-button">View Event</button>
-            </div>
-        </div>
-        <div class="event" data-date="2023-02-10">
-            <img src="https://via.placeholder.com/150" alt="Event">
-            <div class="event-info">
-                <h2>Web Development Workshop</h2>
-                <p>A hands-on workshop on web development using modern technologies.</p>
-                <p>Date: <span class="event-date">10th February, 2023</span></p>
-                <button class="view-event-button">View Event</button>
-            </div>
-        </div>
-        <div class="event" data-date="2023-01-15">
-            <img src="https://via.placeholder.com/150" alt="Event">
-            <div class="event-info">
-                <h2>JavaScript Basics</h2>
-                <p>An introductory session on JavaScript programming fundamentals.</p>
-                <p>Date: <span class="event-date">15th January, 2023</span></p>
-                <button class="view-event-button">View Event</button>
-            </div>
-        </div>
-        <div class="event" data-date="2023-03-05">
-            <img src="https://via.placeholder.com/150" alt="Event">
-            <div class="event-info">
-                <h2>React JS Advanced</h2>
-                <p>A deep dive into building scalable applications with React JS.</p>
-                <p>Date: <span class="event-date">5th March, 2023</span></p>
-                <button class="view-event-button">View Event</button>
-            </div>
-        </div>
-        <div class="event" data-date="2023-04-12">
-            <img src="https://via.placeholder.com/150" alt="Event">
-            <div class="event-info">
-                <h2>Python for Data Science</h2>
-                <p>An informative session on using Python for data analysis and visualization.</p>
-                <p>Date: <span class="event-date">12th April, 2023</span></p>
-                <button class="view-event-button">View Event</button>
-            </div>
-        </div>
-        <div class="event" data-date="2023-05-20">
-            <img src="https://via.placeholder.com/150" alt="Event">
-            <div class="event-info">
-                <h2>AI and Machine Learning</h2>
-                <p>A comprehensive workshop on AI and machine learning principles.</p>
-                <p>Date: <span class="event-date">20th May, 2023</span></p>
-                <button class="view-event-button">View Event</button>
-            </div>
+    <div class="search-container">
+        <div class="heading">Find internship opportunities around you right here</div>
+        <div class="search-box">
+            <label class="search-input">
+                <span class="icon">&#x1F50D;</span>
+                <input type="text" placeholder="Search for job titles or keywords">
+            </label>
+            <label class="search-input">
+                <span class="icon">&#x1F4CD;</span>
+                <input type="text" placeholder="Location">
+            </label>
         </div>
     </div>
-
     <script>
-        document.getElementById('eventDate').addEventListener('input', function() {
-            const selectedDate = this.value;
-            const eventsContainer = document.getElementById('eventsContainer');
-            const events = Array.from(eventsContainer.getElementsByClassName('event'));
-
-            // Sort events by selected date first
-            events.sort((a, b) => {
-                const dateA = a.getAttribute('data-date');
-                const dateB = b.getAttribute('data-date');
-                if (dateA === selectedDate) return -1;
-                if (dateB === selectedDate) return 1;
-                return new Date(dateA) - new Date(dateB);
+        const searchInputs = document.querySelectorAll('.search-input input');
+        searchInputs.forEach(input => {
+            input.addEventListener('focus', () => {
+                input.closest('.search-input').style.backgroundColor = '#dee2e6';
             });
-
-            // Clear and re-append sorted events
-            eventsContainer.innerHTML = '';
-            events.forEach(event => eventsContainer.appendChild(event));
+            input.addEventListener('blur', () => {
+                input.closest('.search-input').style.backgroundColor = '#e9ecef';
+            });
         });
     </script>
 </body>

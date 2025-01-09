@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Activities</title>
-    <link rel="stylesheet" href="/styles/challenge.css">
+    <link rel="stylesheet" href="/styles/resources.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
@@ -23,10 +23,8 @@
               <span class="menu">
                   <li><a href="/index.html">Home</a></li>
                   <li><a href="/pages/activities.html">Activities</a></li>
-                  <li><a style="font-weight: Bold;" href="">Challenge</a></li>
-                  <li><a href="">Executives</a></li>
-                  <li><a href="">Blog</a></li>
-                  <li><a href="">Internships</a></li>
+                  <li><a style="font-weight: Bold;">Resources</a></li>
+                  <li><a href="/pages/internships.html">Internships</a></li>
 
                   
                   <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
@@ -38,13 +36,45 @@
       </nav>
     </header>
 
-    <div class="container">
-      <h1>Join a Challenge</h1>
-      <p>These passionate leaders are responsible for guiding the organization's mission, setting strategic goals, and driving initiatives that benefit our members.</p>
-      <button id="joinButton">JOIN NOW</button>
-      <p class="success-message" id="successMessage">Thank you for joining! Stay tuned for more details.</p>
-    </div>
+    <section class="hero">
+      <h2>Welcome to the Resources Hub</h2>
+      <p>Explore curated resources to accelerate your learning in Computer Science.</p>
+      <button onclick="scrollToResources()">Explore Resources</button>
+    </section>
 
-    <script src="/scripts/challenge.js"></script>
+    <div class="search-container">
+      <input
+        type="text"
+        id="search-bar"
+        placeholder="Search for resources... (e.g., Python, Web Dev)"
+        onkeyup="filterResources()"
+      />
+    </div>
+  
+    <section id="resources" class="resources">
+      <div class="resource-card">
+        <h3>Algorithms Basics</h3>
+        <p>Master the fundamental algorithms for solving common problems.</p>
+        <a href="https://www.geeksforgeeks.org/fundamentals-of-algorithms/" target="_blank">Learn More</a>
+      </div>
+      <div class="resource-card">
+        <h3>Web Development</h3>
+        <p>Resources for building modern websites and web applications.</p>
+        <a href="https://developer.mozilla.org/en-US/docs/Learn" target="_blank">Learn More</a>
+      </div>
+      <div class="resource-card">
+        <h3>Artificial Intelligence</h3>
+        <p>Dive into AI concepts, machine learning, and neural networks.</p>
+        <a href="https://www.coursera.org/browse/data-science/ai" target="_blank">Learn More</a>
+      </div>
+    </section>
+  
+    <button class="back-to-top" onclick="scrollToTop()">↑</button>
+  
+    <footer>
+      <p>&copy; 2025 Computer Science Society. All Rights Reserved.</p>
+    </footer>
+
+    <script src="/scripts/resources.js"></script>
 </body>
 </html>

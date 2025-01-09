@@ -6,7 +6,7 @@
 body {
   font-family: Poppins, sans-serif;
   --color1: #FFF ;
-  --darkColor: rgb(30, 46, 95);
+  --darkColor: rgb(30, 46, 95);  
 }
 .nav-bar {
   width: 100%;
@@ -82,6 +82,57 @@ body {
   opacity: 0.6;
 }
 
+
+.search-container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.heading {
+  margin-bottom: 15px;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #333;
+}
+.search-box {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.search-input {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  border: none;
+  border-radius: 8px;
+  flex: 1;
+  min-width: 280px;
+  max-width: 420px;
+  background-color: #e9ecef;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s;
+}
+.search-input input {
+  border: none;
+  outline: none;
+  width: 100%;
+  background: transparent;
+  font-size: 1rem;
+  color: #555;
+  padding-left: 5px;
+}
+.search-input .icon {
+  font-size: 1.2rem;
+  color: #888;
+}
+.search-input:focus-within {
+  background-color: #dee2e6;
+}
+
 @media(max-width: 900px){
   .menu {
       flex-direction: column;
@@ -100,4 +151,11 @@ body {
   .sign-inbutton {
     margin-right: 40px;
   }
+
+
+  .menu li {margin-top: 40px;}
+  .menu li a {padding: 10px;}
+  .open-menu , .close-menu {display: block;}
+  #check:checked ~ .menu {right: 0;}
+
 }
