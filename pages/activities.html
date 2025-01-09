@@ -16,28 +16,93 @@
 </head>
 <body>
     <header>
-    <nav>
-        <ul class='nav-bar'>
-            <li class='logo'><a href='#'><img alt="Logo" src='/assets/csslogopng 1.png'/></a></li>
-            <input type='checkbox' id='check' />
-            <span class="menu">
-                <li><a href="/index.html">Home</a></li>
-                <li><a style="font-weight: Bold;" href="">Activities</a></li>
-                <li><a href="">Challenge</a></li>
-                <li><a href="">Executives</a></li>
-                <li><a href="">Blog</a></li>
-                <li><a href="">Internships</a></li>
+      <nav>
+          <ul class='nav-bar'>
+              <li class='logo'><a href='#'><img alt="Logo" src='/assets/csslogopng 1.png'/></a></li>
+              <input type='checkbox' id='check' />
+              <span class="menu">
+                  <li><a href="/index.html">Home</a></li>
+                  <li><a style="font-weight: Bold;" href="">Activities</a></li>
+                  <li><a href="">Challenge</a></li>
+                  <li><a href="">Executives</a></li>
+                  <li><a href="">Blog</a></li>
+                  <li><a href="">Internships</a></li>
 
-                
-                <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
-            </span>
-            <a class="sign-inbutton" href="/pages/signin.html">SIGN IN</a>
-            <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
-            
-        </ul>
-    </nav>
+                  
+                  <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+              </span>
+              <a class="sign-inbutton" href="/pages/signin.html">SIGN IN</a>
+              <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
+              
+          </ul>
+      </nav>
     </header>
 
+
+
+    <div class="calendar-container">
+      <h1>Previous Activities</h1>
+      <input type="date" id="eventDate" />
+    </div>
+
+    <div id="eventsContainer">
+        <div class="event" data-date="2025-01-30">
+            <img src="/assets/element5-digital-jCIMcOpFHig-unsplash.jpg" alt="Event">
+            <div class="event-info">
+                <h2>CSS Freshers' Orientation</h2>
+                <p>A program to introduce and orient freshers on what the society is about.</p>
+                <p>Date: <span class="event-date">30th January, 2025</span></p>
+                <button class="view-event-button">View Event</button>
+            </div>
+        </div>
+        <div class="event" data-date="2025-02-10">
+            <img src="/assets/lecture picture.png" alt="Event">
+            <div class="event-info">
+                <h2>Web Development Workshop</h2>
+                <p>A hands-on workshop on web development using modern technologies.</p>
+                <p>Date: <span class="event-date">10th February, 2025</span></p>
+                <button class="view-event-button">View Event</button>
+            </div>
+        </div>
+        <div class="event" data-date="2025-01-15">
+            <img src="/assets/annie-spratt-xKJUnFwfz3s-unsplash.jpg" alt="Event">
+            <div class="event-info">
+                <h2>JavaScript Basics</h2>
+                <p>An introductory session on JavaScript programming fundamentals.</p>
+                <p>Date: <span class="event-date">15th January, 2025</span></p>
+                <button class="view-event-button">View Event</button>
+            </div>
+        </div>
+        <div class="event" data-date="2025-03-05">
+            <img src="/assets/tim-gouw-1K9T5YiZ2WU-unsplash.jpg" alt="Event">
+            <div class="event-info">
+                <h2>React JS Advanced</h2>
+                <p>A deep dive into building scalable applications with React JS.</p>
+                <p>Date: <span class="event-date">5th March, 2025</span></p>
+                <button class="view-event-button">View Event</button>
+            </div>
+        </div>
+        <div class="event" data-date="2025-04-12">
+            <img src="/assets/brooke-cagle-g1Kr4Ozfoac-unsplash.jpg" alt="Event">
+            <div class="event-info">
+                <h2>Python for Data Science</h2>
+                <p>An informative session on using Python for data analysis and visualization.</p>
+                <p>Date: <span class="event-date">12th April, 2025</span></p>
+                <button class="view-event-button">View Event</button>
+            </div>
+        </div>
+        <div class="event" data-date="2025-05-20">
+            <img src="/assets/brooke-cagle--uHVRvDr7pg-unsplash.jpg" alt="Event">
+            <div class="event-info">
+                <h2>AI and Machine Learning</h2>
+                <p>A comprehensive workshop on AI and machine learning principles.</p>
+                <p>Date: <span class="event-date">20th May, 2025</span></p>
+                <button class="view-event-button">View Event</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="/scripts/activities.js"></script>
     </body>
 
     </html>
