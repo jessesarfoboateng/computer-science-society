@@ -5,6 +5,7 @@
   "hints": {
     "axe/structure": "off",
     "axe/forms": "off",
-    "no-inline-styles": "off"
+    "no-inline-styles": "off",
+    "disown-opener": "off"
   }
 }
